@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background: #c21500;  
+background: -webkit-linear-gradient(to right, #ffc500, #c21500); 
+background: linear-gradient(to right, #ffc500, #c21500);
+}
+header span a{
+    color: transparent;
+    -webkit-text-stroke: thick yellow;
+}
+#logoBox{
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+#H1header{
+    float: left;
+    line-height: 100px;
+    padding: 0  15px;
+    text-decoration: none;
+}
+#logo{
+    height: 100%;
+    border-radius: 50%;
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+nav a:hover{
+    background-color:white ;
+    color:black ;
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: red;
+    border-top: 3px solid white;
+    animation-name:changeBackground;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 90%;
+
+}
+#h1Aside{
+    padding: 20px 0;
+    border-bottom: 2px solid red;
+}
+article{
+    width: 70%;
+    
+    height: 450px;
+    float: right;
+    position: relative;
+}
+#box{
+    padding: 15px;
+    text-align: center;
+    width: 400px;
+    height: 180px;
+    position: absolute;
+    background-color: aqua;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#box h1{
+    border-bottom: 3px solid;
+    padding: 15px 0;
+}
+#box p{
+    font-family: 'Cairo', sans-serif;
+}
+#contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#contact-box img{
+    width: 45px;
+    border-bottom: 2px double red;
+    padding-bottom: 10px;
+    
+}
+#contact-box img:hover{
+    width: 55px;
+    border-bottom: 2px solid black;
+
+}
+
+@keyframes changeBackground{
+    0%{
+        background-color: white;
+    }
+    25%{
+        background-color: rgb(0, 255, 76);
+    }
+    50%{
+        background-color: rgb(255, 0, 0);
+    }
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
+}
+@media only screen and (min-width:997px) and (max-width:1162px){
+    #logoBox{
+        width: 35%;
+    }
+    article{
+        width:65%;
+    }
+    aside{
+        width: 35%;
+    }
+
+}
+@media only screen and (min-width:875px) and (max-width:997px){
+    #logoBox{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:875px){
+    header,main{
+        height: auto;
+    }
+
+    #logoBox{
+        width: 100%;
+        text-align: center;
+    }
+    #H1header,#logo{
+        float: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #article{
+        height: 230px;
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    nav li{
+        display:block;
+        width: 100%;
+    }
+}
+@media print{
+    #logoBox{
+        width: 50%;
+    }
+   nav{
+       display: none;
+   }
+}
+
+
+
+
+
+
+
